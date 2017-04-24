@@ -1,0 +1,83 @@
+.journals {
+
+}
+.journal {
+  position: relative;
+  background-color: #fff;
+  float: left;
+  width: 250px;
+  height: 285px;
+  border: 1px solid #EB5E28;
+  margin: 5px;
+  -webkit-transition: opacity 1s ease-in-out;
+       -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+         -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+}
+.journal:hover > .delete-icon {
+  display: block;
+}
+.journal:hover > .edit-icon {
+  display: block;
+}
+.journal .journal-container {
+  cursor: pointer;
+  padding: 7px;
+}
+.journal .journal-container .journal-img {
+  width: 100%;
+  height: 120px;
+}
+.journal .journal-container .journal-title {
+  display: block;
+  white-space: nowrap;
+  height: 28px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.journal .journal-container .journal-body {
+  display: block;
+  display: -webkit-box;
+  height: 120px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.journal.j2 {
+  height: 320px;
+}
+.delete-icon, .edit-icon {
+    font-size: 25px;
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+.delete-icon {
+  right: 10px;
+  top: 10px;
+}
+.edit-icon {
+  right: 10px;
+  top: 45px;
+}
+.deleted-queue {
+  zoom: 1;
+  filter: alpha(opacity=10);
+  opacity: 0.1;
+}
+.undo-button {
+    background-color: #EB5E28;
+    border: 1px solid #EB5E28;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: fixed;
+    top: 25%;
+    right: 25px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}

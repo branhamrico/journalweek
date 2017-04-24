@@ -1,0 +1,22 @@
+{
+  "name": "journal-week",
+  "description": "journal-week",
+  "main": "server/server.js",
+  "authors": [
+    "Joseph Ricohermoso <jricohermoso@stratpoint.com>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap3-wysihtml5-bower": "^0.3.3",
+    "masonry": "^4.1.1"
+  }
+}

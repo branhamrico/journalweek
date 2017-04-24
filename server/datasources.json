@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDs": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "journal_db",
+    "password": "rootpassword",
+    "name": "mongoDs",
+    "user": "root",
+    "connector": "mongodb"
+  }
+}

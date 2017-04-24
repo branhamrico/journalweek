@@ -1,0 +1,27 @@
+<form action="">
+  <div class="form-group">
+    <input type="text" placeholder="Title" class="form-control" ng-model="form.title" />
+  </div>
+  <div class="form-group">
+    <textarea id="journalBody" placeholder="Content" class="form-control" /></textarea>
+  </div>
+  <div class="form-group">
+    <div class="checkbox-inline">
+      <label for="">
+        <input type="checkbox" name="sharedToPublic" ng-model="form.sharedToPublic" ng-change="setSharedToPublic()">Is Public
+      </label>
+    </div>
+    <div class="checkbox-inline">
+      <label for="">
+        <input type="checkbox" name="isPrivate" ng-model="form.isPrivate" ng-change="setPrivate()">Is Private
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <input class="btn btn-primary" type="button" value="Create" ng-if="onCreate" ng-click="create()">
+    <input class="btn btn-primary" type="button" value="Update" ng-if="onUpdate" ng-click="update()">
+  </div>
+</form>
+<script>
+  $(document).ready(() => $('#journalBody').wysihtml5({toolbar: {blockquote: false, image: false, link: false}}));
+</script>

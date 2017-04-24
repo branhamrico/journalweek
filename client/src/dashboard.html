@@ -1,0 +1,106 @@
+<div class="wrapper">
+      <div class="sidebar" data-background-color="white" data-active-color="danger">
+        <!--
+        Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+        Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+        -->
+        <div class="sidebar-wrapper">
+              <div class="logo">
+                  <a href="http://www.creative-tim.com" class="simple-text">
+                      Your Personal Notes
+                  </a>
+              </div>
+
+              <ul class="nav">
+                  <li id="home" ui-sref-active="active">
+                      <a ui-sref="app.home">
+                          <i class="ti-home"></i>
+                          <p>Home</p>
+                      </a>
+                  </li>
+                  <li id="public-notes" ui-sref-active="active">
+                      <a ui-sref="app.public-notes">
+                          <i class="ti-notepad"></i>
+                          <p>Public Notes</p>
+                      </a>
+                  </li>
+                  <li id="private-notes" ui-sref-active="active">
+                      <a ui-sref="app.private-notes">
+                          <i class="ti-notepad"></i>
+                          <p>Private Notes</p>
+                      </a>
+                  </li>
+                  <li id="settings" ui-sref-active="active">
+                      <a ui-sref="app.settings">
+                          <i class="ti-settings"></i>
+                          <p>Settings</p>
+                      </a>
+                  </li>
+                  <li id="notifications" ui-sref-active="active">
+                      <a ui-sref="app.notifications">
+                          <i class="ti-bell"></i>
+                          <p>Notifications</p>
+                      </a>
+                  </li>
+              </ul>
+        </div>
+      </div>
+
+      <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Template</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a ui-sref="app.new">
+                                <i class="ti-notepad"></i>
+                                <p>New Journal</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="logout"><p>Logout</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div ui-view></div>
+          </div>
+            <!--<div class="container-fluid">
+                <div class="row">
+
+                </div>
+            </div>-->
+        </div>
+
+        <!--<footer class="footer">
+            <div class="container-fluid">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Sample Loopback Application
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright pull-right">
+                    &copy; <script></script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                </div>
+            </div>
+        </footer>-->
+
+      </div>
+    </div>

@@ -1,0 +1,48 @@
+{
+  "name": "Journal",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "isPrivate": {
+      "type": "boolean"
+    },
+    "sharedToPublic": {
+      "type": "boolean"
+    },
+    "dateAdded": {
+      "type": "date"
+    },
+    "dateUpdated": {
+      "type": "date"
+    },
+    "dateDeleted": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "writer": {
+      "type": "belongsTo",
+      "model": "Writer",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

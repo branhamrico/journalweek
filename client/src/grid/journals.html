@@ -1,0 +1,11 @@
+<div class="journals">
+  <div class="journal" ng-class="{'deleted-queue': isDeletedQueue(j)}" ng-repeat="j in journals">
+    <i class="ti-trash delete-icon" ng-if="!isDeletedQueue(j)" ng-click="delete($index, j)"></i>
+    <i class="ti-pencil edit-icon" ng-if="!isDeletedQueue(j)" ui-sref="app.edit({id: j.id})"></i>
+    <div class="journal-container" ng-click="openPreview(j)">
+      <div class="journal-img" gradient-background></div>
+      <div class="journal-title">{{j.title}}</div>
+      <div class="journal-body" ng-bind-html="j.body"></div>
+    </div>
+</div>
+<div class="undo-button" ng-show="deleteQueue.length" ng-click="undoDelete()">Undo</div>
